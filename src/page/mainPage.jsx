@@ -241,13 +241,15 @@ const MainPage = () => {
                         : "bg-green-500"
                     }`}
                   ></div>
-                  <p className="text-sm mt-1">
+                  <p className="text-xs mt-0">
                     Strength:
-                    {passwordStrength === "weak"
-                      ? " Easy"
-                      : passwordStrength === "medium"
-                      ? " Medium"
-                      : " Hard"}
+                    <i className="font-bold">
+                      {passwordStrength === "weak"
+                        ? " Easy"
+                        : passwordStrength === "medium"
+                        ? " Medium"
+                        : " Hard"}
+                    </i>
                   </p>
                 </div>
               )}
