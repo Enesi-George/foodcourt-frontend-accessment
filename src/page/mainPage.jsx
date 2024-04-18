@@ -195,7 +195,7 @@ const MainPage = () => {
                 id="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="mt-1 p-2 block w-full border-gray-300 rounded-md shadow-sm focus:outline-none  focus:ring-none"
+                className="mt-1 p-2 block w-full border-gray-300 bg-white rounded-md shadow-sm focus:outline-none"
                 required
                 disabled={allSettingsFalse}
                 placeholder="George@example.com"
@@ -213,7 +213,7 @@ const MainPage = () => {
                 id="password"
                 value={password}
                 onChange={handlePasswordChange}
-                className="mt-1 p-2 block w-full border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-none"
+                className="mt-1 p-2 block w-full bg-white border-gray-300 rounded-md shadow-sm focus:outline-none"
                 required
                 disabled={allSettingsFalse}
                 placeholder="Password"
