@@ -5,8 +5,8 @@ export default {
     extend: {
       keyframes: {
         wiggle: {
-          "0%, 100%": { transform: "rotate(-10deg)" },
-          "50%": { transform: "rotate(10deg)" },
+          "0%, 100%": { transform: "rotate(-20deg)" },
+          "50%": { transform: "rotate(20deg)" },
         },
       },
       animation: {

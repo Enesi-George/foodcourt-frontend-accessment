@@ -89,7 +89,7 @@ const MainPage = () => {
 
     // Calculate password strength only if the user is typing
     if (isTyping) {
-      const strength = calculatePasswordStrength(password, settings);
+      const strength = calculatePasswordStrength(password);
       updatePasswordStrengthUI(strength);
     }
     //spinner
@@ -120,7 +120,7 @@ const MainPage = () => {
     setPasswordError(generateErrorMessage(newPassword, settings));
   };
 
-  const calculatePasswordStrength = (password, settings) => {
+  const calculatePasswordStrength = (password) => {
     let strength = "weak";
     const hasUppercase = /[A-Z]/.test(password);
     const hasLowercase = /[a-z]/.test(password);
@@ -128,7 +128,6 @@ const MainPage = () => {
     const hasSpecialChar = /[!@#$%^&*()]/.test(password);
 
     if (
-      settings.minLength &&
       password.length >= 10 &&
       hasUppercase &&
       hasLowercase &&
